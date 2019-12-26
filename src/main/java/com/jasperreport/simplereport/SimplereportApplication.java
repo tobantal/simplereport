@@ -41,7 +41,7 @@ public class SimplereportApplication {
 
         JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, beanColDataSource);
 
-        JasperExportManager.exportReportToPdfFile(jasperPrint, Paths.get("") + REPORT_pdf);
+        JasperExportManager.exportReportToPdfFile(jasperPrint, Paths.get("").toAbsolutePath().toString() + REPORT_pdf);
     }
 
 	public static void main(String[] args) {
