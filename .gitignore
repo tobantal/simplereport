@@ -29,8 +29,6 @@ build/
 
 ### VS Code ###
 
-
 bin/
 *.jrxml.bak
-src/
 
